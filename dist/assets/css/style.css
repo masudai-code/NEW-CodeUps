@@ -1,6 +1,6 @@
 body {
 	color: #0D2936;
-	font-family: "Gotu", "Noto Sans JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 }
 
 .u-desktop {
@@ -146,6 +146,28 @@ a {
 	transition: opacity 0.3s;
 }
 
+.heading {
+	text-align: center;
+}
+
+.heading__main {
+	font-size: 2rem;
+	line-height: 1.25;
+	text-transform: capitalize;
+}
+
+.heading__main::first-letter {
+	color: #408F95;
+}
+
+.heading__sub {
+	color: #408F95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 300;
+	margin-top: 0.25rem;
+}
+
 .inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -166,6 +188,15 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.heading__main {
+	font-size: 2.5rem;
+	line-height: 1;
+}
+
+.heading__sub {
+	margin-top: 0.5rem;
 }
 
 .inner {
