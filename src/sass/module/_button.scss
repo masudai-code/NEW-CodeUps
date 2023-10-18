@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.button {
+  display: inline-block;
+  background-color: $green1;
+  width: rem(202);
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+  padding: rem(16) 0;
+  font-size: rem(14);
+  line-height: 1.571;
+}
+
+.button::first-letter {
+  text-transform: capitalize;
+}

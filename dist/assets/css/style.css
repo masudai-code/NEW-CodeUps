@@ -146,6 +146,22 @@ a {
 	transition: opacity 0.3s;
 }
 
+.button {
+	background-color: #408F95;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.875rem;
+	line-height: 1.571;
+	padding: 1rem 0;
+	text-align: center;
+	width: 12.625rem;
+}
+
+.button::first-letter {
+	text-transform: capitalize;
+}
+
 .heading {
 	text-align: center;
 }
