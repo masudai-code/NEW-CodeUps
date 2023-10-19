@@ -154,6 +154,7 @@ a {
 	font-size: 0.875rem;
 	line-height: 1.571;
 	padding: 1rem 0;
+	position: relative;
 	text-align: center;
 	width: 12.625rem;
 	z-index: 1;
@@ -163,16 +164,33 @@ a {
 	text-transform: capitalize;
 }
 
+.button::before {
+	border: 0.0625rem solid #408F95;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(0.25rem, 0.25rem);
+	z-index: -2;
+}
+
+.button span {
+	padding: 2.875rem;
+	position: relative;
+}
+
 .button span::after {
 	background-image: url(../images/common/button-arrow1.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	content: "";
-	height: 0.4375rem;
+	height: 0.375rem;
 	position: absolute;
 	right: 0;
-	top: 40%;
+	top: 48%;
 	transform: translateY(-50%);
 	width: 2.5rem;
 }
