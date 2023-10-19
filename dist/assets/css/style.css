@@ -156,10 +156,25 @@ a {
 	padding: 1rem 0;
 	text-align: center;
 	width: 12.625rem;
+	z-index: 1;
 }
 
 .button::first-letter {
 	text-transform: capitalize;
+}
+
+.button span::after {
+	background-image: url(../images/common/button-arrow1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 0.4375rem;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	transform: translateY(-50%);
+	width: 2.5rem;
 }
 
 .heading {

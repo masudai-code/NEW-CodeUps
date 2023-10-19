@@ -10,8 +10,23 @@
   padding: rem(16) 0;
   font-size: rem(14);
   line-height: 1.571;
+  z-index: 1;
 }
 
 .button::first-letter {
   text-transform: capitalize;
+}
+
+.button span::after {
+  content: "";
+  position: absolute;
+  width: rem(40);
+  height: rem(7);
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/common/button-arrow1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
