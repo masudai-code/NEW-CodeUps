@@ -156,6 +156,7 @@ a {
 	padding: 1rem 0;
 	position: relative;
 	text-align: center;
+	transition: color 0.2s;
 	width: 12.625rem;
 	z-index: 1;
 }
