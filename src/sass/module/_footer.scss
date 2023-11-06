@@ -11,7 +11,10 @@
 }
 
 .footer__heading {
-
+  @include mq("md") {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .footer__logo img {
@@ -24,4 +27,22 @@
 .footer__sns-links {
   margin-top: rem(16);
   display: flex;
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(40);
+    padding-bottom: rem(5);
+  }
+}
+
+.footer__sns-link + .footer__sns-link {
+  margin-left: rem(16);
+}
+
+.footer__sns-link img {
+  width: rem(24);
+  height: rem(24);
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
 }

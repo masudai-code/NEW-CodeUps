@@ -211,6 +211,15 @@ a {
 	margin-top: 1rem;
 }
 
+.footer__sns-link + .footer__sns-link {
+	margin-left: 1rem;
+}
+
+.footer__sns-link img {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
 .heading {
 	text-align: center;
 }
@@ -260,8 +269,24 @@ html {
 	padding-top: 5rem;
 }
 
+.footer__heading {
+	align-items: flex-end;
+	display: flex;
+}
+
 .footer__logo img {
 	width: 12.5rem;
+}
+
+.footer__sns-links {
+	margin-left: 2.5rem;
+	margin-top: 0;
+	padding-bottom: 0.3125rem;
+}
+
+.footer__sns-link img {
+	height: 2rem;
+	width: 2rem;
 }
 
 .heading__main {
