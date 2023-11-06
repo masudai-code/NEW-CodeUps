@@ -198,6 +198,17 @@ a {
 
 .footer {
 	background-color: #408F95;
+	padding-bottom: 3.5rem;
+	padding-top: 3rem;
+}
+
+.footer__logo img {
+	width: 7.5rem;
+}
+
+.footer__sns-links {
+	display: flex;
+	margin-top: 1rem;
 }
 
 .heading {
@@ -242,6 +253,15 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.footer {
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+}
+
+.footer__logo img {
+	width: 12.5rem;
 }
 
 .heading__main {
