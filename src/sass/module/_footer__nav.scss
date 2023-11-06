@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.footer__nav {
+  display: flex;
+}
+
+.footer-nav__left + .footer-nav__right {
+  margin-left: rem(16);
+}

@@ -196,6 +196,14 @@ a {
 	width: 2.5rem;
 }
 
+.footer__nav {
+	display: flex;
+}
+
+.footer-nav__left + .footer-nav__right {
+	margin-left: 1rem;
+}
+
 .footer {
 	background-color: #408F95;
 	padding-bottom: 3.5rem;
@@ -218,6 +226,10 @@ a {
 .footer__sns-link img {
 	height: 1.5rem;
 	width: 1.5rem;
+}
+
+.footer__nav {
+	margin-top: 2.5rem;
 }
 
 .heading {
@@ -287,6 +299,10 @@ html {
 .footer__sns-link img {
 	height: 2rem;
 	width: 2rem;
+}
+
+.footer__nav {
+	margin-top: 1.8125rem;
 }
 
 .heading__main {
