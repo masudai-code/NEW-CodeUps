@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.header {
+  background-color: rgba($color: $black1, $alpha: 0.68);
+  width: 100%;
+  height: rem(80);
+  @include mq("md") {
+    height: rem(90);
+  }
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  @include mq("md") {
+    padding: 0 40px;
+  }
+}
+
+.header__logo {
+  width: rem(102);
+  height: inherit;
+  z-index: 9999;
+  @include mq("md") {
+    width: rem(133);
+  }
+}
+
+.header__logoLink {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__hamburger {
+  height: inherit;
+}
+
+.header__pc-nav {
+  height: inherit;
+}
+
+.header__sp-nav {
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
