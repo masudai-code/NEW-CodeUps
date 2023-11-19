@@ -304,6 +304,34 @@ a {
 	width: inherit;
 }
 
+.hamburger span:nth-child(1) {
+	top: 15%;
+}
+
+.hamburger span:nth-child(2) {
+	top: 51%;
+}
+
+.hamburger span:nth-child(3) {
+	opacity: 1;
+	top: 85%;
+}
+
+.hamburger.is-active span:nth-child(1) {
+	top: 60%;
+	transform: rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+	opacity: 0;
+	top: 51%;
+}
+
+.hamburger.is-active span:nth-child(3) {
+	top: 60%;
+	transform: rotate(-45deg);
+}
+
 .header {
 	background-color: rgba(13, 41, 54, 0.68);
 	height: 5rem;
@@ -315,7 +343,7 @@ a {
 	display: flex;
 	height: inherit;
 	justify-content: space-between;
-	padding: 0 15px;
+	padding: 0 0.9375rem;
 }
 
 .header__logo {
