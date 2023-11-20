@@ -408,6 +408,54 @@ a {
 	width: 100%;
 }
 
+.pc-nav__items {
+	align-items: center;
+	display: flex;
+	height: inherit;
+	justify-content: center;
+}
+
+.pc-nav__item,
+.pc-nav__item a {
+	height: inherit;
+}
+
+.pc-nav__item a {
+	align-items: center;
+	color: #fff;
+	display: flex;
+	height: inherit;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+.pc-nav__item-wrap {
+	position: relative;
+}
+
+.pc-nav__item-en {
+	display: block;
+	font-size: 1.125rem;
+	line-height: 1;
+	text-align: center;
+}
+
+.pc-nav__item-jp {
+	display: block;
+	font-size: 0.625rem;
+	line-height: 1;
+	margin-top: 0.25rem;
+	text-align: center;
+}
+
+.pc-nav__item:first-child a {
+	padding-left: 0;
+}
+
+.pc-nav__item:last-child a {
+	padding-right: 0;
+}
+
 @media screen and (min-width: 768px) {
 
 .u-desktop {

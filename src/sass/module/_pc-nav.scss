@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.pc-nav {
+
+}
+
+.pc-nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.pc-nav__item,
+.pc-nav__item a {
+  height: inherit;
+}
+
+.pc-nav__item a {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  padding: 0 20px;
+}
+
+.pc-nav__item-wrap {
+  position: relative;
+}
+
+.pc-nav__item-en {
+  display: block;
+  text-align: center;
+  font-size: rem(18);
+  line-height: 1;
+}
+
+.pc-nav__item-jp {
+  display: block;
+  margin-top: rem(4);
+  font-size: rem(10);
+  line-height: 1;
+  text-align: center;
+}
+
+.pc-nav__item:first-child a {
+  padding-left: 0;
+}
+
+.pc-nav__item:last-child a {
+  padding-right: 0;
+}
