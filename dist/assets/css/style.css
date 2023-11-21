@@ -367,17 +367,6 @@ a {
 	height: inherit;
 }
 
-.header__sp-nav {
-	display: none;
-	height: 100vh;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 5000;
-}
-
 .heading {
 	text-align: center;
 }
@@ -454,6 +443,17 @@ a {
 
 .pc-nav__item:last-child a {
 	padding-right: 0;
+}
+
+.sp-nav {
+	background-color: #408F95;
+	display: none;
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {
