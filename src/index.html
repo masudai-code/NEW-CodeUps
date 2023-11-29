@@ -23,16 +23,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
 
 
   <!-- header -->
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="index.html" class="header__logoLink">
@@ -111,7 +113,7 @@
           </li><!-- /.pc-nav__item -->
         </ul><!-- /.pc-nav__items -->
       </nav><!-- /.header__pc-nav -->
-      <nav class="header__sp-nav sp-nav js-sp-nav is-active">
+      <nav class="header__sp-nav sp-nav js-sp-nav">
         <div class="sp-nav__inner">
           <div class="sp-nav__left">
             <ul class="sp-nav__left-items">
@@ -202,6 +204,39 @@
 
 
   <main>
+    <!-- MV -->
+    <div class="mv">
+      <div class="mv__in">
+        <div class="mv__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/mv-img1.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/mv-sp-img1.jpg" alt="ウミガメが綺麗な海を泳いでいる様子">
+              </picture>
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/mv-img2.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/mv-sp-img2.jpg" alt="ダイバーがウミガメを眺めている様子">
+              </picture>
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/mv-img3.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/mv-sp-img3.jpg" alt="青空が広がる海上ををヨットが走っている様子">
+              </picture>
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/mv-img4.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/mv-sp-img4.jpg" alt="綺麗な海と砂浜が広がっている様子">
+              </picture>
+            </div><!-- /.swiper-slide -->
+          </div><!-- /.swiper-wrapper -->
+        </div><!-- /.swiper -->
+      </div><!-- /.mv__in -->
+    </div><!-- /.mv -->
 
 
     

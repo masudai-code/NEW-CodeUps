@@ -3,6 +3,7 @@
 .sp-nav {
   display: none;
   position: absolute;
+  z-index: 5000;
   top: 0;
   left: 0;
   right: 0;
@@ -11,10 +12,54 @@
   background-color: $green1;
 }
 
-// .sp-nav.is-active {
-//   display: block;
-// }
+.sp-nav.is-active {
+  display: block;
+}
 
 .sp-nav__inner {
-  
+  display: flex;
+  padding: rem(96) rem(15) rem(80);
+}
+
+.sp-nav__left,
+.sp-nav__right {
+    width: 50%;
+}
+
+.sp-nav__left-items,
+.sp-nav__right-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-nav__left-item a,
+.sp-nav__right-item a {
+  width: 100%;
+  display: block;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  color: $white;
+  font-weight: normal;
+  line-height: 1.125;
+}
+
+.sp-nav__left-item:first-child a,
+.sp-nav__right-item:first-child a {
+  font-weight: bold;
+  position: relative;
+}
+
+.sp-nav__left-item:first-child a::before,
+.sp-nav__right-item:first-child a::before {
+  content: "";
+  position: absolute;
+  width: rem(18);
+  height: rem(18);
+  top: rem(8);
+  left: 0;
+  background-image: url(../images/common/starfish.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
