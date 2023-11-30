@@ -13,4 +13,17 @@ jQuery(function ($) {
       $(".js-sp-nav").fadeIn(300);
     }
   });
+
+  // スライダー
+  var swiper = new Swiper(".js-mv-swiper", {
+    loop: true,
+    // ループ有効
+    speed: 6000,
+    // ループの時間
+    allowTouchMove: false,
+    // スワイプ無効
+    autoplay: {
+      delay: 0 // 途切れなくループ
+    }
+  });
 });
