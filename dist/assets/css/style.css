@@ -196,6 +196,10 @@ a {
 	width: 2.5rem;
 }
 
+.campaign {
+	padding: 40px 0 80px;
+}
+
 .footer-nav {
 	display: flex;
 	width: 100%;
@@ -574,6 +578,10 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.campaign {
+	padding: 120px 0 140px;
 }
 
 .footer-nav__left,

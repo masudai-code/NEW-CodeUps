@@ -1,2 +1,16 @@
 @use "global" as *;
 
+.campaign {
+  padding: 40px 0 80px;
+  @include mq("md") {
+    padding: 120px 0 140px;
+  }
+}
+
+.campaign__inner {
+  position: relative;
+}
+
+.campaign__slider {
+  margin-top: rem(40);
+}
