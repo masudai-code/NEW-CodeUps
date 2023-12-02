@@ -196,8 +196,43 @@ a {
 	width: 2.5rem;
 }
 
+.campaign-card {
+	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+}
+
+.campaign-card__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 333/223;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.campaign-card__body {
+	padding: 16px 16px 24px;
+}
+
+.campaign-card__tag {
+	border: 0.0625rem solid #408F95;
+	color: #408F95;
+}
+
+.campaign-cards__items {
+	display: grid;
+}
+
 .campaign {
 	padding: 40px 0 80px;
+}
+
+.campaign__inner {
+	position: relative;
+}
+
+.campaign__slider {
+	margin-top: 1.5rem;
 }
 
 .footer-nav {
@@ -578,6 +613,10 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.campaign-card__body {
+	padding: 24px 16px 40px;
 }
 
 .campaign {
