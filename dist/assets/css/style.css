@@ -230,13 +230,60 @@ a {
 .campaign-card__title {
 	font-family: "Noto Serif JP", sans-serif;
 	font-size: 1rem;
+	font-weight: 500;
 	line-height: 1.5;
 	padding-bottom: 0.5rem;
 	padding-top: 0.25rem;
 }
 
+.campaign-card__wrapper {
+	border-top: 1px solid #408F95;
+	text-align: center;
+}
+
+.campaign-card__text {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1.714;
+	margin-top: 0.5rem;
+}
+
+.campaign-card__price {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.5rem;
+}
+
+.campaign-card__price-before {
+	font-family: "Lato", serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+}
+
+.campaign-card__price-before::after {
+	border-top: 3px solid #C94800;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 39%;
+}
+
+.campaign-card__price-after {
+	color: #408F95;
+	font-family: "Lato", serif;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1;
+	padding-left: 1rem;
+}
+
 .campaign-cards__items {
 	display: grid;
+	grid-auto-flow: column;
 }
 
 .campaign {

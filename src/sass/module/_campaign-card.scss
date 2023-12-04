@@ -47,5 +47,50 @@
   font-size: rem(16);
   line-height: 1.5;
   font-family: $second-font-family;
+  font-weight: $medium;
 }
 
+.campaign-card__wrapper {
+  border-top: 1px solid $green1;
+  text-align: center;
+}
+
+.campaign-card__text {
+  margin-top: rem(8);
+  font-size: rem(14);
+  font-family: $second-font-family;
+  line-height: 1.714;
+}
+
+.campaign-card__price {
+  margin-top: rem(8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campaign-card__price-before {
+  font-size: rem(20);
+  font-weight: bold;
+  line-height: 1;
+  font-family: $third-font-family;
+  position: relative;
+}
+
+.campaign-card__price-before::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 39%;
+  border-top: 3px solid $red;
+}
+
+.campaign-card__price-after {
+  padding-left: rem(16);
+  font-size: rem(32);
+  color: $green1;
+  line-height: 1;
+  font-weight: bold;
+  font-family: $third-font-family;
+}
