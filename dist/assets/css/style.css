@@ -211,12 +211,28 @@ a {
 }
 
 .campaign-card__body {
-	padding: 16px 16px 24px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1rem 1rem 1.5rem;
 }
 
 .campaign-card__tag {
 	border: 0.0625rem solid #408F95;
 	color: #408F95;
+	display: inline-block;
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: 0.5rem 0.75rem;
+}
+
+.campaign-card__title {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding-bottom: 0.5rem;
+	padding-top: 0.25rem;
 }
 
 .campaign-cards__items {
@@ -429,7 +445,7 @@ a {
 
 .heading__sub {
 	color: #408F95;
-	font-family: "Lato", sans-serif;
+	font-family: "Noto Serif JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	margin-top: 0.25rem;
@@ -475,7 +491,7 @@ a {
 
 .mv__title {
 	color: #fff;
-	font-family: "Lato", sans-serif;
+	font-family: "Lato", serif;
 	font-size: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.54em;
@@ -616,7 +632,7 @@ html {
 }
 
 .campaign-card__body {
-	padding: 24px 16px 40px;
+	padding: 1.5rem 1rem 2.5rem;
 }
 
 .campaign {
