@@ -14,3 +14,15 @@
 .campaign__slider {
   margin-top: rem(24);
 }
+
+
+/* 前への矢印カスタマイズ */
+.top-swiper-button-prev::after {
+  background-image: url(../images/common/button-prev.png);
+}
+
+/* 次への矢印カスタマイズ */
+.top-swiper-button-next::after {
+  background-image: url(../images/common/button-next.png);
+
+}
