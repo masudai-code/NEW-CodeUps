@@ -301,15 +301,31 @@ a {
 	margin-top: 1.5rem;
 }
 
-/* 前への矢印カスタマイズ */
+/* 前後の矢印 */
 
-.top-swiper-button-prev::after {
+.top-swiper-button-prev,
+.top-swiper-button-next {
+	height: 5rem;
+	top: 1.375rem;
+	transition: opacity 0.3s;
+	width: 5rem;
+}
+
+.top-swiper-button-prev:after,
+.top-swiper-button-next:after {
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: none;
+	height: 5rem;
+	width: 5rem;
+}
+
+.top-swiper-button-prev:after {
 	background-image: url(../images/common/button-prev.png);
 }
 
-/* 次への矢印カスタマイズ */
-
-.top-swiper-button-next::after {
+.top-swiper-button-next:after {
 	background-image: url(../images/common/button-next.png);
 }
 
@@ -699,6 +715,11 @@ html {
 
 .campaign {
 	padding: 120px 0 140px;
+}
+
+.top-swiper-button-prev:after,
+.top-swiper-button-next:after {
+	display: block;
 }
 
 .footer-nav__left,

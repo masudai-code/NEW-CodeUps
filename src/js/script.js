@@ -12,7 +12,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // スライダー
+  // mvスライダー
   const swiper = new Swiper(".js-mv-swiper", {
     loop: true, // ループ有効
     speed: 6000, // ループの時間
@@ -21,5 +21,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       delay: 0, // 途切れなくループ
     },
   });
+
+  // campaignスライダー
+  
 
 });

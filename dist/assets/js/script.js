@@ -14,7 +14,7 @@ jQuery(function ($) {
     }
   });
 
-  // スライダー
+  // mvスライダー
   var swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     // ループ有効
@@ -26,4 +26,6 @@ jQuery(function ($) {
       delay: 0 // 途切れなくループ
     }
   });
+
+  // campaignスライダー
 });

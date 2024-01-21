@@ -16,13 +16,34 @@
 }
 
 
-/* 前への矢印カスタマイズ */
-.top-swiper-button-prev::after {
+/* 前後の矢印 */
+.top-swiper-button-prev,
+.top-swiper-button-next {
+  height: rem(80);
+  width: rem(80);
+  top: rem(22);
+  transition: opacity 0.3s;
+}
+
+.top-swiper-button-prev:after,
+.top-swiper-button-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(80);
+  width: rem(80);
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+
+.top-swiper-button-prev:after {
   background-image: url(../images/common/button-prev.png);
 }
 
-/* 次への矢印カスタマイズ */
-.top-swiper-button-next::after {
+.top-swiper-button-next:after {
   background-image: url(../images/common/button-next.png);
-
 }
+
