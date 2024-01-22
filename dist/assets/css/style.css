@@ -329,6 +329,16 @@ a {
 	background-image: url(../images/common/button-next.png);
 }
 
+.top-swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: 76.5%;
+}
+
+.top-swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: 2.2124%;
+}
+
 .footer-nav {
 	display: flex;
 	width: 100%;
