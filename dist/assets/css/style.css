@@ -146,6 +146,25 @@ a {
 	transition: opacity 0.3s;
 }
 
+.blog-card__title {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.blog-card__text {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.blog-card__date {
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
 .button {
 	background-color: #408F95;
 	color: #fff;
