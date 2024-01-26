@@ -146,6 +146,11 @@ a {
 	transition: opacity 0.3s;
 }
 
+.blog-card {
+	background-color: #fff;
+	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+}
+
 .blog-card__title {
 	font-family: "Noto Serif JP", sans-serif;
 	font-size: 1rem;
@@ -174,6 +179,11 @@ a {
 
 .blog-card__body {
 	padding: 1.5rem 1rem;
+}
+
+.blog__button {
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .button {
@@ -367,6 +377,11 @@ a {
 .top-swiper-button-next,
 .swiper-rtl .swiper-button-prev {
 	right: 2.2124%;
+}
+
+.campaign__button {
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .footer-nav {
@@ -749,6 +764,10 @@ html {
 	font-size: 1.4814814815vw;
 }
 
+.blog__button {
+	margin-top: 5rem;
+}
+
 .campaign-card__body {
 	padding: 1.5rem 1rem 2.5rem;
 }
@@ -760,6 +779,10 @@ html {
 .top-swiper-button-prev:after,
 .top-swiper-button-next:after {
 	display: block;
+}
+
+.campaign__button {
+	margin-top: 5rem;
 }
 
 .footer-nav__left,

@@ -29,3 +29,11 @@
 .blog-card__body {
   padding: rem(24) rem(16);
 }
+
+.blog__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
