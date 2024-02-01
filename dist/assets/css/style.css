@@ -156,13 +156,9 @@ a {
 	padding: 1rem 1rem 1.5rem;
 }
 
-.blog-card__img {
-	aspect-ratio: 301/201;
-	overflow: hidden;
-}
-
 .blog-card__img img {
 	-o-object-fit: cover;
+	aspect-ratio: 301/201;
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
@@ -190,7 +186,15 @@ a {
 	margin-top: 1.5rem;
 }
 
+.blog-cards__item + .blog-cards__item {
+	margin-top: 2.5rem;
+}
+
 .blog {
+	position: relative;
+}
+
+.blog__inner {
 	position: relative;
 }
 
@@ -789,6 +793,33 @@ html {
 	font-size: 1.4814814815vw;
 }
 
+.blog-cards {
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	grid-row-gap: 5rem;
+	column-gap: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 5rem;
+}
+
+.blog-cards__item + .blog-cards__item {
+	margin-top: 0;
+}
+
+.blog {
+	padding-top: 6.25rem;
+}
+
+.blog__bg {
+	height: 60.13%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
 .blog__cards {
 	margin-top: 5rem;
 }
@@ -876,13 +907,25 @@ html {
 	width: 8.3125rem;
 }
 
+.heading__main.heading__main--white {
+	color: #fff;
+}
+
 .heading__main {
 	font-size: 2.5rem;
 	line-height: 1;
 }
 
+.heading__main.heading__main--white::first-letter {
+	color: #DDF0F1;
+}
+
 .heading__sub {
 	margin-top: 0.5rem;
+}
+
+.heading__sub.heading__sub--white {
+	color: #fff;
 }
 
 .inner {
