@@ -24,7 +24,16 @@
 
 .blog__inner::before {
   @include mq("md") {
-    
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/fish1.png);
+    width: rem(437);
+    height: rem(201);
+    top: rem(-76);
+    left: calc(50% - min(48.5vw, rem(600)));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
 

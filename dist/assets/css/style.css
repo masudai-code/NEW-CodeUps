@@ -820,6 +820,19 @@ html {
 	z-index: -1;
 }
 
+.blog__inner::before {
+	background-image: url(../images/common/fish1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 12.5625rem;
+	left: calc(50% - min(48.5vw, 37.5rem));
+	position: absolute;
+	top: -4.75rem;
+	width: 27.3125rem;
+}
+
 .blog__cards {
 	margin-top: 5rem;
 }
