@@ -146,6 +146,22 @@ a {
 	transition: opacity 0.3s;
 }
 
+.about__content {
+	margin-top: 2.5rem;
+}
+
+.about__title {
+	color: #408F95;
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.about__button {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
 .blog-card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
