@@ -146,7 +146,7 @@ a {
 	transition: opacity 0.3s;
 }
 
-.about__content {
+.about__content-wrap {
 	margin-top: 2.5rem;
 }
 
@@ -155,6 +155,16 @@ a {
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 1;
+}
+
+.about__text-wrap {
+	margin-top: 1rem;
+}
+
+.about__text {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 .about__button {
