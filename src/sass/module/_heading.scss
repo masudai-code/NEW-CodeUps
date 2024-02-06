@@ -13,7 +13,6 @@
 .heading__main {
   font-size: rem(32);
   line-height: 1.25;
-  text-transform:capitalize;
   @include mq("md") {
     font-size: rem(40);
     line-height: 1;
@@ -27,6 +26,7 @@
 }
 
 .heading__main::first-letter {
+  text-transform:capitalize;
   color: $green1;
 }
 

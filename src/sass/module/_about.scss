@@ -1,5 +1,43 @@
 @use "global" as *;
 
+.about__inner {
+  position: relative;
+}
+
+.about__img-wrap {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.about__img-small {
+  width: 37.1014%;
+  position: relative;
+  z-index: 2;
+}
+
+.about__img-small img {
+  aspect-ratio: 128 / 194;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about__img-big {
+  width: 81.449%; // 281 / 345
+  margin-top: -49%;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.about__img-big img {
+  aspect-ratio: 281 / 186;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 
