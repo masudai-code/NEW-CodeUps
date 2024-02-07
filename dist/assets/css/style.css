@@ -217,7 +217,7 @@ a {
 }
 
 .about__button {
-	margin-top: 2.5rem;
+	margin-top: 3.125rem;
 	text-align: center;
 }
 
@@ -877,6 +877,34 @@ html {
 }
 
 .about__img-wrap {
+	margin-top: 2.5rem;
+}
+
+.about__content-wrap {
+	color: #fff;
+	display: flex;
+	left: 20%;
+	margin-top: 0;
+	position: absolute;
+	top: 40%;
+	width: 75%;
+	z-index: 2;
+}
+
+.about__title {
+	color: #fff;
+	font-size: 5rem;
+	line-height: 1.25;
+	width: 50%;
+}
+
+.about__text-wrap {
+	margin-left: 2.5rem;
+	margin-top: 0;
+	width: 50%;
+}
+
+.about__button {
 	margin-top: 2.5rem;
 }
 
