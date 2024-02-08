@@ -17,11 +17,14 @@
   height: 100%;
 }
 
-.blog-card__wrapper {
-  border-top: 1px solid $green1;
-  // text-align: center;
-  margin-top: rem(4);
+.blog-card__title {
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: 1.5;
+  font-family: $second-font-family;
+  border-bottom: rem(1) solid $green1;
 }
+
 
 .blog-card__text {
   font-size: rem(16);

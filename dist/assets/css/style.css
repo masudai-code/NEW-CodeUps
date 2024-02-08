@@ -243,9 +243,12 @@ a {
 	width: 100%;
 }
 
-.blog-card__wrapper {
-	border-top: 1px solid #408F95;
-	margin-top: 0.25rem;
+.blog-card__title {
+	border-bottom: 0.0625rem solid #408F95;
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
 }
 
 .blog-card__text {
@@ -275,13 +278,6 @@ a {
 
 .blog__inner {
 	position: relative;
-}
-
-.blog-card__title {
-	font-family: "Noto Serif JP", sans-serif;
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: 1.5;
 }
 
 .blog__cards {
@@ -690,7 +686,44 @@ a {
 
 .information {
 	background-color: #DDF0F1;
-	padding: 5rem;
+	padding: 5rem 0;
+}
+
+.information__content {
+	margin-top: 1.5rem;
+}
+
+.information__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 540/356;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.information__body {
+	margin-top: 1.5rem;
+}
+
+.information__title {
+	border-bottom: 0.0625rem solid #408F95;
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.information__text {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-top: 0.5rem;
+}
+
+.information__button {
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .inner {
@@ -1080,6 +1113,11 @@ html {
 
 .information {
 	padding: 6.25rem 0;
+}
+
+.information__content {
+	display: flex;
+	margin-top: 2.5rem;
 }
 
 .inner {
