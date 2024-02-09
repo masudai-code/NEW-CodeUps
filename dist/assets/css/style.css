@@ -1120,6 +1120,17 @@ html {
 	margin-top: 2.5rem;
 }
 
+.information__img {
+	width: 50%;
+}
+
+.information__body {
+	margin-left: 3rem;
+	margin-top: 0;
+	padding-top: 3.8125rem;
+	width: 45.56%;
+}
+
 .inner {
 	max-width: 1130px;
 	padding-left: 25px;

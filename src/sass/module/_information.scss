@@ -16,6 +16,12 @@
   }
 }
 
+.information__img {
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
 .information__img img {
   aspect-ratio: 540 / 356;
   object-fit: cover;
@@ -25,6 +31,12 @@
 
 .information__body {
   margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(48);
+    padding-top: rem(61);
+    width: 45.56%;
+  }
 }
 
 .information__title {
