@@ -35,7 +35,7 @@
     margin-top: 0;
     margin-left: rem(48);
     padding-top: rem(61);
-    width: 45.56%;
+    width: 45.56%; // 幅492 / 1080
   }
 }
 
@@ -45,6 +45,12 @@
   line-height: 1.2;
   font-family: $second-font-family;
   border-bottom: rem(1) solid $green1;
+  padding-bottom: rem(4);
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1;
+    padding-bottom: rem(8);
+  }
 }
 
 .information__text {
