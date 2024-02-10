@@ -906,6 +906,53 @@ a {
 	display: flex;
 }
 
+.voice-card__title-wrap {
+	border-bottom: 0.0625rem solid #408F95;
+	width: 47.603%;
+}
+
+.voice-card__age {
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.voice-card__tag {
+	border: 0.0625rem solid #408F95;
+	color: #408F95;
+	display: inline-block;
+	font-family: "Noto Serif JP", sans-serif;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: 0.5rem 0.75rem;
+}
+
+.voice-card__title {
+	font-family: "Noto Serif JP", sans-serif;
+	font-weight: 500;
+	margin-top: 0.25rem;
+}
+
+.voice-card__img {
+	-o-object-fit: cover;
+	aspect-ratio: 151/117;
+	height: 100%;
+	margin-left: 0.8125rem;
+	object-fit: cover;
+	padding-top: 0.5625rem;
+	width: 100%;
+}
+
+.voice-card__text {
+	font-family: "Noto Serif JP", sans-serif;
+	line-height: 1.5;
+	margin-top: 0.9375rem;
+}
+
+.voice__inner {
+	position: relative;
+}
+
 .voice__cards {
 	margin-top: 2.5rem;
 }
@@ -1176,6 +1223,20 @@ html {
 
 .voice-card {
 	padding: 1.5rem;
+}
+
+.voice-card__info {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+.voice-card__img {
+	aspect-ratio: 180/140;
+}
+
+.voice-card__text {
+	margin-top: 2.5rem;
 }
 
 .voice__cards {

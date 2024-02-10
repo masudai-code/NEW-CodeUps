@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.voice__inner {
+  position: relative;
+}
+
+
 .voice__cards {
   margin-top: rem(40);
   @include mq("md") {
