@@ -903,6 +903,7 @@ a {
 }
 
 .voice-card__head {
+	align-items: flex-start;
 	display: flex;
 }
 
@@ -934,12 +935,16 @@ a {
 }
 
 .voice-card__img {
+	margin-left: 0.8125rem;
+	padding-top: 0.4375rem;
+	width: calc(50.2428% - 6px);
+}
+
+.voice-card__img img {
 	-o-object-fit: cover;
 	aspect-ratio: 151/117;
 	height: 100%;
-	margin-left: 0.8125rem;
 	object-fit: cover;
-	padding-top: 0.5625rem;
 	width: 100%;
 }
 
@@ -947,6 +952,10 @@ a {
 	font-family: "Noto Serif JP", sans-serif;
 	line-height: 1.5;
 	margin-top: 0.9375rem;
+}
+
+.voice-cards__item {
+	margin-top: 3.0625rem;
 }
 
 .voice__inner {
@@ -1232,6 +1241,12 @@ html {
 }
 
 .voice-card__img {
+	margin-left: 1rem;
+	padding-top: 0;
+	width: 40.1356%;
+}
+
+.voice-card__img img {
 	aspect-ratio: 180/140;
 }
 
