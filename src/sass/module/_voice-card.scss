@@ -15,7 +15,13 @@
 
 .voice-card__title-wrap {
   border-bottom: rem(1) solid $green1;
-  width: 47.603%;
+  width: 47.603%; // wrap幅149/コンテンツ幅313
+  @include mq("md") {
+    // width: 61%; // wrap幅276/コンテンツ幅472
+    width: 60.474%;
+
+    
+  }
 }
 
 .voice-card__info {
@@ -47,6 +53,10 @@
   margin-top: rem(4);
   font-weight: $medium;
   font-family: $second-font-family;
+  @include mq("md") {
+    font-size: rem(24);
+    margin-top: rem(8);
+  }
 }
 
 .voice-card__img {
@@ -85,7 +95,7 @@
 // }
 
 .voice-card__text {
-  margin-top: rem(15);
+  margin-top: rem(16);
   line-height: 1.5;
   font-family: $second-font-family;
   @include mq("md") {

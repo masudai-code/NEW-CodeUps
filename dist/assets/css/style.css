@@ -951,7 +951,7 @@ a {
 .voice-card__text {
 	font-family: "Noto Serif JP", sans-serif;
 	line-height: 1.5;
-	margin-top: 0.9375rem;
+	margin-top: 1rem;
 }
 
 .voice-cards__item {
@@ -1234,10 +1234,19 @@ html {
 	padding: 1.5rem;
 }
 
+.voice-card__title-wrap {
+	width: 60.474%;
+}
+
 .voice-card__info {
 	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
+}
+
+.voice-card__title {
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
 }
 
 .voice-card__img {
@@ -1252,6 +1261,16 @@ html {
 
 .voice-card__text {
 	margin-top: 2.5rem;
+}
+
+.voice-cards {
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	grid-row-gap: 5rem;
+	column-gap: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 5rem;
 }
 
 .voice__cards {
