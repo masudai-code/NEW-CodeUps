@@ -954,7 +954,7 @@ a {
 	margin-top: 1rem;
 }
 
-.voice-cards__item {
+.voice-cards__item + .voice-cards__item {
 	margin-top: 3.0625rem;
 }
 
@@ -1235,6 +1235,7 @@ html {
 }
 
 .voice-card__title-wrap {
+	padding-top: 1.5rem;
 	width: 60.474%;
 }
 
@@ -1242,6 +1243,10 @@ html {
 	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
+}
+
+.voice-card__tag {
+	padding: 0.625rem 0.8125rem;
 }
 
 .voice-card__title {
@@ -1271,6 +1276,36 @@ html {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 5rem;
+}
+
+.voice-cards__item + .voice-cards__item {
+	margin-top: 0;
+}
+
+.voice__inner::before {
+	background-image: url(../images/common/fish2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 8.625rem;
+	left: calc(50% - min(48.5vw, 38.5rem));
+	position: absolute;
+	top: -7.5rem;
+	width: 18.8125rem;
+}
+
+.voice__inner::after {
+	background-image: url(../images/common/fish3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -4.1875rem;
+	content: "";
+	height: 10.125rem;
+	position: absolute;
+	right: calc(50% - min(48.5vw, 33.5rem));
+	width: 4.4375rem;
 }
 
 .voice__cards {

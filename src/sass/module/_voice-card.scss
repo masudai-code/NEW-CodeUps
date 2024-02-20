@@ -19,8 +19,7 @@
   @include mq("md") {
     // width: 61%; // wrap幅276/コンテンツ幅472
     width: 60.474%;
-
-    
+    padding-top: rem(24);
   }
 }
 
@@ -47,6 +46,9 @@
   line-height: 1;
   padding: rem(8) rem(12);
   font-family: $second-font-family;
+  @include mq("md") {
+    padding: rem(10) rem(13);
+  }
 }
 
 .voice-card__title {
@@ -81,18 +83,6 @@
       aspect-ratio: 180 / 140;
   }
 }
-
-// .voice-card__img {
-//   margin-left: rem(13);
-//   padding-top: rem(9);
-//   aspect-ratio: 151 / 117;
-//   height: 100%;
-//   object-fit: cover;
-//   width: 100%;
-//   @include mq("md") {
-//     aspect-ratio: 180 / 140;
-//   }
-// }
 
 .voice-card__text {
   margin-top: rem(16);
