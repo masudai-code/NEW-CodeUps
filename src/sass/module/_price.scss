@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.price {
+  background-color: $green2;
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding: rem(100) 0;
+  }
+}
+
+.price__inner {
+  position: relative;
+}
+
+.price__content {
+  margin-top: rem(24);
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.price__img {
+}
+
+.price__img img {
+  aspect-ratio: 345 / 227;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @include mq("md") {
+    aspect-ratio: 492 / 746;
+  }
+}
+
+.price__container {
+  margin-top: rem(40);
+  @include mq("md") {
+margin-right: rem(93);
+  }
+}
+
+.price__button {
+  margin-top: rem(40);
+  text-align: center;
+}

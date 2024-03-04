@@ -162,6 +162,10 @@ a {
 	margin-top: 4.375rem;
 }
 
+.top-price {
+	margin-top: 5rem;
+}
+
 .top-voice {
 	margin-top: 5rem;
 }
@@ -833,6 +837,71 @@ a {
 	padding-right: 0;
 }
 
+.price-list__title {
+	border-bottom: 0.0625rem solid #408F95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	padding-bottom: 0.25rem;
+}
+
+.price-list__item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0.5rem;
+	row-gap: 1.125rem;
+}
+
+.price-list__item dt {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1;
+	width: 73%;
+}
+
+.price-list__item dd {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1;
+	text-align: right;
+	width: 27%;
+}
+
+.price-lists__item + .price-lists__item {
+	margin-top: 2.5rem;
+}
+
+.price {
+	background-color: #DDF0F1;
+	padding: 5rem 0;
+}
+
+.price__inner {
+	position: relative;
+}
+
+.price__content {
+	margin-top: 1.5rem;
+}
+
+.price__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/227;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.price__container {
+	margin-top: 2.5rem;
+}
+
+.price__button {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
 .sp-nav {
 	background-color: #408F95;
 	display: none;
@@ -999,6 +1068,10 @@ html {
 
 .top-information {
 	margin-top: 10.25rem;
+}
+
+.top-price {
+	margin-top: 6.25rem;
 }
 
 .top-voice {
@@ -1228,6 +1301,23 @@ html {
 
 .mv__title {
 	font-size: 5rem;
+}
+
+.price {
+	padding: 6.25rem 0;
+}
+
+.price__content {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.price__img img {
+	aspect-ratio: 492/746;
+}
+
+.price__container {
+	margin-right: 5.8125rem;
 }
 
 .voice-card {

@@ -1,0 +1,5 @@
+@use "global" as *;
+
+.price-lists__item + .price-lists__item {
+  margin-top: rem(40);
+}

@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.price-list__title {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  font-family: "Noto Sans JP", sans-serif;
+  border-bottom: rem(1) solid $green1;
+  padding-bottom: rem(4);
+}
+
+.price-list__item {
+  margin-top: rem(8);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: rem(18);
+}
+
+.price-list__item dt {
+  font-size: rem(14);
+  width: 73%;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1;
+}
+
+.price-list__item dd {
+  font-size: rem(14);
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: right;
+  width: 27%;
+  line-height: 1;
+}
