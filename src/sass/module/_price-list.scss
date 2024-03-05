@@ -7,13 +7,16 @@
   font-family: "Noto Sans JP", sans-serif;
   border-bottom: rem(1) solid $green1;
   padding-bottom: rem(4);
+  @include mq("md") {
+    line-height: 1.5;
+  }
 }
 
 .price-list__item {
   margin-top: rem(8);
   display: flex;
   flex-wrap: wrap;
-  row-gap: rem(18);
+  row-gap: rem(8);
 }
 
 .price-list__item dt {
@@ -21,6 +24,10 @@
   width: 73%;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
 }
 
 .price-list__item dd {
@@ -29,4 +36,8 @@
   text-align: right;
   width: 27%;
   line-height: 1;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
 }

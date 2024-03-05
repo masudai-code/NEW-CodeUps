@@ -850,7 +850,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0.5rem;
-	row-gap: 1.125rem;
+	row-gap: 0.5rem;
 }
 
 .price-list__item dt {
@@ -1303,13 +1303,45 @@ html {
 	font-size: 5rem;
 }
 
+.price-list__title {
+	line-height: 1.5;
+}
+
+.price-list__item dt {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.price-list__item dd {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
 .price {
 	padding: 6.25rem 0;
+}
+
+.price__inner::before {
+	background-image: url(../images/common/fish4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -2.6875rem;
+	content: "";
+	height: 12.5625rem;
+	left: calc(50% - min(48.5vw, 39rem));
+	position: absolute;
+	width: 27.3125rem;
 }
 
 .price__content {
 	display: flex;
 	flex-direction: row-reverse;
+	margin-top: 2.5rem;
+}
+
+.price__img {
+	width: calc(50% - 3rem);
 }
 
 .price__img img {
@@ -1318,6 +1350,12 @@ html {
 
 .price__container {
 	margin-right: 5.8125rem;
+	margin-top: 0;
+	width: calc(50% - 3rem);
+}
+
+.price__button {
+	margin-top: 5rem;
 }
 
 .voice-card {
