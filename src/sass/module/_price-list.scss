@@ -6,17 +6,17 @@
   line-height: 1;
   font-family: "Noto Sans JP", sans-serif;
   border-bottom: rem(1) solid $green1;
-  padding-bottom: rem(4);
+  padding-bottom: rem(5);
   @include mq("md") {
     line-height: 1.5;
   }
 }
 
 .price-list__item {
-  margin-top: rem(8);
+  margin-top: rem(12);
   display: flex;
   flex-wrap: wrap;
-  row-gap: rem(8);
+  row-gap: rem(15);
 }
 
 .price-list__item dt {
