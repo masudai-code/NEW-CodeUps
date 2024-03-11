@@ -496,6 +496,50 @@ a {
 	text-align: center;
 }
 
+.contact-texts__item + .contact-texts__item {
+	margin-top: 0.75rem;
+}
+
+.contact-texts__item p {
+	font-family: "Noto Sans JP", sans-serif;
+	line-height: 1.5;
+	text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.contact__inner {
+	position: relative;
+}
+
+.contact__logo {
+	border-bottom: 1px solid #408f95;
+	filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+	text-align: center;
+}
+
+.contact__logo img {
+	aspect-ratio: 174/65;
+	display: inline-block;
+	height: 100%;
+	width: 10.875rem;
+}
+
+.contact__company-info {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.contact__map {
+	margin-top: 1rem;
+}
+
+.contact__map iframe {
+	-o-object-fit: cover;
+	aspect-ratio: 295/160;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
 .footer-nav {
 	display: flex;
 	width: 100%;
@@ -1186,6 +1230,19 @@ html {
 
 .campaign__button {
 	margin-top: 5rem;
+}
+
+.contact__wrapper {
+	box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+	display: flex;
+}
+
+.contact__logo img {
+	width: 12.5rem;
+}
+
+.contact__map iframe {
+	aspect-ratio: 273/148;
 }
 
 .footer-nav__left,
