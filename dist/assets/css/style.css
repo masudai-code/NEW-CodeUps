@@ -159,7 +159,7 @@ a {
 }
 
 .top-contact {
-	margin-top: 5rem;
+	margin: 5rem 0 6.25rem;
 }
 
 .top-information {
@@ -529,6 +529,7 @@ a {
 }
 
 .contact__map {
+	filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
 	margin-top: 1rem;
 }
 
@@ -538,6 +539,25 @@ a {
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
+}
+
+.contact__right {
+	margin-top: 2.5rem;
+	text-align: center;
+	text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.contact__text {
+	color: #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	margin-top: 0.5rem;
+}
+
+.contact__button {
+	filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+	margin-top: 2.5rem;
+	text-shadow: none;
 }
 
 .footer-nav {
@@ -724,7 +744,7 @@ a {
 
 .heading__main {
 	font-size: 2rem;
-	line-height: 1.25;
+	line-height: 1;
 }
 
 .heading__main::first-letter {
@@ -732,12 +752,20 @@ a {
 	text-transform: capitalize;
 }
 
+.heading__main.heading__main--big {
+	font-size: 5rem;
+}
+
 .heading__sub {
 	color: #408f95;
 	font-family: "Noto Serif JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
-	margin-top: 0.25rem;
+	margin-top: 0.625rem;
+}
+
+.heading__sub.heading__sub--big {
+	margin-top: -0.3125rem;
 }
 
 .information {
@@ -1307,17 +1335,12 @@ html {
 	width: 8.3125rem;
 }
 
-.heading__main.heading__main--white {
-	color: #fff;
-}
-
 .heading__main {
 	font-size: 2.5rem;
-	line-height: 1;
 }
 
 .heading__main.heading__main--white::first-letter {
-	color: #ddf0f1;
+	color: #fff;
 }
 
 .heading__sub {

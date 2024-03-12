@@ -21,9 +21,7 @@
   text-align: center;
   border-bottom: 1px solid $green1;
   // box-shadow: rem(0) rem(4) rem(4) rem(0) rgba($color: $black2, $alpha: 0.25);
-  filter: drop-shadow(
-    rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25)
-  );
+  filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
 }
 
 .contact__logo img {
@@ -43,6 +41,8 @@
 
 .contact__map {
   margin-top: rem(16);
+  // box-shadow:  rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
+  filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
 }
 
 .contact__map iframe {
@@ -56,6 +56,10 @@
 }
 
 .contact__right {
+  text-align: center;
+  margin-top: rem(40);
+  text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: .25);
+
 }
 
 .contact__heading {
@@ -77,9 +81,17 @@
 }
 
 .contact__text {
+  font-size: rem(14);
+  color: $green1;
+  margin-top: rem(8);
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .contact__button {
+  margin-top: rem(40);
+  text-shadow: none;
+  filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
+  
 }
 
 .button {

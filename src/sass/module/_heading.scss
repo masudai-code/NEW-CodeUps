@@ -4,24 +4,11 @@
   text-align: center;
 }
 
-.heading__main.heading__main--white {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
 .heading__main {
   font-size: rem(32);
-  line-height: 1.25;
+  line-height: 1;
   @include mq("md") {
     font-size: rem(40);
-    line-height: 1;
-  }
-}
-
-.heading__main.heading__main--white::first-letter {
-  @include mq("md") {
-    color: $green2;
   }
 }
 
@@ -30,8 +17,20 @@
   color: $green1;
 }
 
+.heading__main.heading__main--white::first-letter {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+
+
+.heading__main.heading__main--big{
+  font-size: rem(80);
+}
+
 .heading__sub {
-  margin-top: rem(4);
+  margin-top: rem(10);
   font-size: rem(12);
   color: $green1;
   font-family: $second-font-family;
@@ -47,3 +46,6 @@
   }
 }
 
+.heading__sub.heading__sub--big{
+  margin-top: rem(-5);
+}
