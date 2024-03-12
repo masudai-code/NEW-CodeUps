@@ -1,6 +1,9 @@
 @use "global" as *;
 
 .contact-texts {
+  @include mq("md") { 
+  margin-right: rem(21);
+  }
 }
 
 .contact-texts__items {
@@ -14,4 +17,7 @@
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
   text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: .25);
+  @include mq("md") { 
+  text-shadow: none;
+  }
 }

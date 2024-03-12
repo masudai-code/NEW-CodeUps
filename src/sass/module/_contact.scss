@@ -15,6 +15,11 @@
 }
 
 .contact__left {
+  padding: rem(80) rem(82) rem(80) rem(50);
+  @include mq("md") { 
+  border-right: 1px solid $green1;
+  
+  }
 }
 
 .contact__logo {
@@ -22,6 +27,9 @@
   border-bottom: 1px solid $green1;
   // box-shadow: rem(0) rem(4) rem(4) rem(0) rgba($color: $black2, $alpha: 0.25);
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
+  @include mq("md") { 
+    filter: none;
+  }
 }
 
 .contact__logo img {
@@ -37,12 +45,21 @@
 .contact__company-info {
   margin-top: rem(16);
   text-align: center;
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(24);
+    text-align: left;
+  }
 }
 
 .contact__map {
   margin-top: rem(16);
   // box-shadow:  rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
+  @include mq("md") { 
+  margin: 0;
+  filter: none;
+  }
 }
 
 .contact__map iframe {
@@ -58,8 +75,7 @@
 .contact__right {
   text-align: center;
   margin-top: rem(40);
-  text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: .25);
-
+  text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
 }
 
 .contact__heading {
@@ -91,7 +107,6 @@
   margin-top: rem(40);
   text-shadow: none;
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
-  
 }
 
 .button {

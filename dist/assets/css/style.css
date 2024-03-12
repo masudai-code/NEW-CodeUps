@@ -510,6 +510,10 @@ a {
 	position: relative;
 }
 
+.contact__left {
+	padding: 5rem 5.125rem 5rem 3.125rem;
+}
+
 .contact__logo {
 	border-bottom: 1px solid #408f95;
 	filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
@@ -1142,6 +1146,10 @@ html {
 	margin-top: 8.75rem;
 }
 
+.top-contact {
+	margin: 8.75rem 0 10rem;
+}
+
 .top-information {
 	margin-top: 10.25rem;
 }
@@ -1260,13 +1268,40 @@ html {
 	margin-top: 5rem;
 }
 
+.contact-texts {
+	margin-right: 1.3125rem;
+}
+
+.contact-texts__item p {
+	text-shadow: none;
+}
+
 .contact__wrapper {
 	box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
 	display: flex;
 }
 
+.contact__left {
+	border-right: 1px solid #408f95;
+}
+
+.contact__logo {
+	filter: none;
+}
+
 .contact__logo img {
 	width: 12.5rem;
+}
+
+.contact__company-info {
+	display: flex;
+	margin-top: 1.5rem;
+	text-align: left;
+}
+
+.contact__map {
+	filter: none;
+	margin: 0;
 }
 
 .contact__map iframe {
