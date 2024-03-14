@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.contact {
-}
-
 .contact__inner {
   position: relative;
 }
@@ -11,23 +8,26 @@
   @include mq("md") {
     display: flex;
     box-shadow: rem(4) rem(4) rem(10) rgba($color: $black2, $alpha: 0.25);
+    padding: rem(80) rem(112) rem(80) rem(50);
   }
 }
 
 .contact__left {
-  padding: rem(80) rem(82) rem(80) rem(50);
-  @include mq("md") { 
-  border-right: 1px solid $green1;
-  
+  padding-left: rem(25);
+  padding-right: rem(25);
+  @include mq("md") {
+    border-right: 1px solid $green1;
+    width: 60%;
+    padding-left: 0;
+    padding-right: rem(81);
   }
 }
 
 .contact__logo {
   text-align: center;
   border-bottom: 1px solid $green1;
-  // box-shadow: rem(0) rem(4) rem(4) rem(0) rgba($color: $black2, $alpha: 0.25);
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
-  @include mq("md") { 
+  @include mq("md") {
     filter: none;
   }
 }
@@ -54,11 +54,12 @@
 
 .contact__map {
   margin-top: rem(16);
-  // box-shadow:  rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
-  @include mq("md") { 
-  margin: 0;
-  filter: none;
+  @include mq("md") {
+    margin: 0;
+    filter: none;
+    width: 62.0454%;
+    margin-left: rem(21);
   }
 }
 
@@ -76,24 +77,12 @@
   text-align: center;
   margin-top: rem(40);
   text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
-}
-
-.contact__heading {
-}
-
-.heading {
-}
-
-.heading__main {
-}
-
-.heading__main--big {
-}
-
-.heading__sub {
-}
-
-.heading__sub--big {
+  padding: 0 rem(15);
+  @include mq("md") {
+    margin: 0;
+    padding: rem(20) 0 rem(20) rem(81);
+    text-shadow: none;
+  }
 }
 
 .contact__text {
@@ -107,7 +96,7 @@
   margin-top: rem(40);
   text-shadow: none;
   filter: drop-shadow(rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25));
-}
-
-.button {
+  @include mq("md") {
+    filter: none;
+  }
 }
