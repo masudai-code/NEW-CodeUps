@@ -497,7 +497,7 @@ a {
 }
 
 .contact-texts__item + .contact-texts__item {
-	margin-top: 0.75rem;
+	margin-top: 0.25rem;
 }
 
 .contact-texts__item p {
@@ -508,6 +508,19 @@ a {
 
 .contact__inner {
 	position: relative;
+}
+
+.contact__inner::before {
+	background-image: url(../images/common/fish4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 3.125rem;
+	position: absolute;
+	right: 0.9375rem;
+	top: -1.625rem;
+	width: 6.8125rem;
 }
 
 .contact__left {
@@ -1276,6 +1289,13 @@ html {
 
 .contact-texts__item p {
 	text-shadow: none;
+}
+
+.contact__inner::before {
+	bottom: -2.5rem;
+	height: 8.625rem;
+	right: calc(50% - min(48.5vw, 41.8125rem));
+	width: 18.8125rem;
 }
 
 .contact__wrapper {

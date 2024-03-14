@@ -4,6 +4,25 @@
   position: relative;
 }
 
+.contact__inner::before {
+  content: "";
+    position: absolute;
+    background-image: url(../images/common/fish4.png);
+    width: rem(109);
+    height: rem(50);
+    top: rem(-26);
+    right: rem(15);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: rem(-40);
+    right: calc(50% - min(48.5vw, rem(669)));
+  }
+}
+
 .contact__wrapper {
   @include mq("md") {
     display: flex;
