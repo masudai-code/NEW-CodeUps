@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.page-top {
+  cursor: pointer;
+  position: fixed;
+  z-index: 9000;
+  width: rem(48);
+  height: rem(48);
+  right: rem(15);
+  bottom: rem(16);
+  transition: opacity 0.3s;
+  border: rem(1) solid $green1;
+  border-radius: 50%;
+  @include mq("md") {
+    right: rem(20);
+    bottom: rem(20);
+    width: rem(80);
+    height: rem(80);
+  }
+}
+
+.page-top::before {
+  position: absolute;
+  content: "";
+  width: rem(8);
+  height: rem(10);
+  border-top: rem(1) solid $green1;
+  top: rem(11);
+  left: 42%;
+  transform: rotate(-45deg);
+  @include mq("md") {
+    width: rem(10);
+    top: rem(23);
+  }
+}
+
+.page-top::after {
+  position: absolute;
+  content: "";
+  width: rem(1);
+  height: rem(28);
+  background-color: $green1;
+  top: rem(10);
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq("md") {
+    top: rem(20);
+    height: rem(40);
+  }
+}
+
+.page-top:hover {
+  opacity: 0.7;
+}

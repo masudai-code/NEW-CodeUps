@@ -884,6 +884,45 @@ a {
 	text-align: center;
 }
 
+.page-top {
+	border: 0.0625rem solid #408f95;
+	border-radius: 50%;
+	bottom: 1rem;
+	cursor: pointer;
+	height: 3rem;
+	position: fixed;
+	right: 0.9375rem;
+	transition: opacity 0.3s;
+	width: 3rem;
+	z-index: 9000;
+}
+
+.page-top::before {
+	border-top: 0.0625rem solid #408f95;
+	content: "";
+	height: 0.625rem;
+	left: 42%;
+	position: absolute;
+	top: 0.6875rem;
+	transform: rotate(-45deg);
+	width: 0.5rem;
+}
+
+.page-top::after {
+	background-color: #408f95;
+	content: "";
+	height: 1.75rem;
+	left: 50%;
+	position: absolute;
+	top: 0.625rem;
+	transform: translateX(-50%);
+	width: 0.0625rem;
+}
+
+.page-top:hover {
+	opacity: 0.7;
+}
+
 .pc-nav__items {
 	align-items: center;
 	display: flex;
@@ -1458,6 +1497,23 @@ html {
 
 .mv__title {
 	font-size: 5rem;
+}
+
+.page-top {
+	bottom: 1.25rem;
+	height: 5rem;
+	right: 1.25rem;
+	width: 5rem;
+}
+
+.page-top::before {
+	top: 1.4375rem;
+	width: 0.625rem;
+}
+
+.page-top::after {
+	height: 2.5rem;
+	top: 1.25rem;
 }
 
 .price-list__title {
