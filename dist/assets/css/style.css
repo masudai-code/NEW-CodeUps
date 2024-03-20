@@ -593,7 +593,7 @@ a {
 }
 
 .footer-nav__left + .footer-nav__right {
-	margin-left: 1rem;
+	padding-left: 1rem;
 }
 
 .footer-nav__left-items,
@@ -631,7 +631,7 @@ a {
 	height: 1.125rem;
 	left: 0;
 	position: absolute;
-	top: 0.5rem;
+	top: 0.75rem;
 	width: 1.125rem;
 }
 
