@@ -374,7 +374,15 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding: 1rem 1rem 1.5rem;
+	padding: 1.125rem 1rem 1.0625rem;
+}
+
+.campaign-card__info {
+	-moz-column-gap: 0.625rem;
+	column-gap: 0.625rem;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 0.625rem;
 }
 
 .campaign-card__tag {
@@ -392,12 +400,13 @@ a {
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
-	padding-bottom: 0.5rem;
-	padding-top: 0.25rem;
+	padding-top: 0.5rem;
 }
 
 .campaign-card__wrapper {
-	border-top: 1px solid #408f95;
+	border-top: 0.0625rem solid #408f95;
+	margin-top: 0.9375rem;
+	padding: 0 1.1875rem 0;
 	text-align: center;
 }
 
@@ -455,6 +464,15 @@ a {
 
 .campaign__slider {
 	margin-top: 1.5rem;
+	padding-bottom: 0.625rem;
+}
+
+.campaign__slider .swiper-slide img {
+	-o-object-fit: cover;
+	aspect-ratio: 280/188;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
 }
 
 /* 前後の矢印 */
@@ -496,7 +514,7 @@ a {
 }
 
 .campaign__button {
-	margin-top: 2.5rem;
+	margin-top: 1.875rem;
 	text-align: center;
 }
 
@@ -1314,7 +1332,24 @@ html {
 }
 
 .campaign-card__body {
-	padding: 1.5rem 1rem 2.5rem;
+	padding-bottom: 1.8125rem;
+	padding-top: 1.5rem;
+}
+
+.campaign-card__wrapper {
+	margin-top: 0.5rem;
+}
+
+.campaign-card__text {
+	font-size: 1rem;
+}
+
+.campaign__slider {
+	margin-top: 2.5rem;
+}
+
+.campaign__slider .swiper-slide img {
+	aspect-ratio: 333/223;
 }
 
 .top-swiper-button-prev:after,
@@ -1323,7 +1358,7 @@ html {
 }
 
 .campaign__button {
-	margin-top: 5rem;
+	margin-top: 4.375rem;
 }
 
 .contact-texts {
