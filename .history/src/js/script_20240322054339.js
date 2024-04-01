@@ -23,6 +23,7 @@ jQuery(function ($) {
   });
 
   // campaignスライダー
+  
 
   // page-topボタン
   $(function () {
@@ -44,7 +45,7 @@ jQuery(function ($) {
       );
       return false;
     });
-
+    
     // フッター手前でストップ
     $(".js-page-top").hide();
     $(window).on("scroll", function () {
@@ -52,17 +53,18 @@ jQuery(function ($) {
       scrollPosition = $(window).height() + $(window).scrollTop();
       footHeight = $("footer").innerHeight();
       if (scrollHeight - scrollPosition <= footHeight) {
-        // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
-        $(".js-page-top").css({
-          position: "absolute",
-          bottom: footHeight + 0,
-        });
-      } else {
-        $(".js-page-top").css({
-          position: "fixed",
-          bottom: "0",
-        });
-      }
-    });
+    // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      $(".js-page-top").css({
+        position: "absolute",
+        bottom: footHeight,
+      });
+    } else {
+      $(".js-page-top").css({
+        position: "fixed",
+        bottom: "0",
+      });
+    }
   });
 });
+
+

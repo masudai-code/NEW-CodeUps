@@ -1,6 +1,7 @@
 body {
 	color: #0d2936;
 	font-family: "Gotu", "Noto Sans JP", sans-serif;
+	position: relative;
 }
 
 .u-desktop {

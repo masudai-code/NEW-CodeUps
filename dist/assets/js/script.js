@@ -34,7 +34,7 @@ jQuery(function ($) {
     var pageTop = $(".js-page-top");
     pageTop.hide();
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 20) {
+      if ($(this).scrollTop() > 100) {
         pageTop.fadeIn();
       } else {
         pageTop.fadeOut();
@@ -45,6 +45,26 @@ jQuery(function ($) {
         scrollTop: 0
       }, 500);
       return false;
+    });
+
+    // フッター手前でストップ
+    $(".js-page-top").hide();
+    $(window).on("scroll", function () {
+      scrollHeight = $(document).height();
+      scrollPosition = $(window).height() + $(window).scrollTop();
+      footHeight = $("footer").innerHeight();
+      if (scrollHeight - scrollPosition <= footHeight) {
+        // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+        $(".js-page-top").css({
+          position: "absolute",
+          bottom: footHeight + 0
+        });
+      } else {
+        $(".js-page-top").css({
+          position: "fixed",
+          bottom: "0"
+        });
+      }
     });
   });
 });
