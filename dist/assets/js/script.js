@@ -100,7 +100,7 @@ jQuery(function ($) {
 
   // colorbox アニメーション
   //要素の取得とスピードの設定
-  var box = $(".colorbox"),
+  var box = $(".js-colorbox"),
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
@@ -130,4 +130,29 @@ jQuery(function ($) {
       }
     });
   });
+
+  // const box = $(".js-colorbox");
+  // const speed = 700;
+
+  // box.each(function () {
+  //   $(this).append('<div class="color"></div>');
+  //   const color = $(this).find($(".color"));
+  //   const image = $(this).find("img");
+  //   let counter = 0; // この変数は値が変わる可能性があるのでletを使用
+
+  //   image.css("opacity", "0");
+  //   color.css("width", "0%");
+  //   color.on("inview", function () {
+  //     if (counter == 0) {
+  //       $(this)
+  //         .delay(200)
+  //         .animate({ width: "100%" }, speed, function () {
+  //           image.css("opacity", "1");
+  //           $(this).css({ left: "0", right: "auto" });
+  //           $(this).animate({ width: "0%" }, speed);
+  //         });
+  //       counter = 1; // ここでcounterの値を変更している
+  //     }
+  //   });
+  // });
 });
