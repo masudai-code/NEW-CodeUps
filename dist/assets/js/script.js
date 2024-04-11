@@ -31,13 +31,13 @@ jQuery(function ($) {
   var campaignSwiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     // ループ
-    speed: 1500,
+    speed: 3000,
     // 少しゆっくり(デフォルトは300)
     slidesPerView: 1.25,
     // 一度に表示する枚数
     breakpoints: {
       1024: {
-        slidesPerView: 2.5,
+        slidesPerView: 3.3,
         // 一度に表示する枚数
         spaceBetween: 40 // スライド間の距離
       }
