@@ -518,6 +518,25 @@ a {
 	text-align: center;
 }
 
+.colorbox {
+	position: relative;
+}
+
+.colorbox div.color {
+	background-color: #10404c;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.colorbox img {
+	display: block;
+	width: 100%;
+}
+
 .contact-texts__item + .contact-texts__item {
 	margin-top: 0.25rem;
 }
