@@ -90,7 +90,7 @@ jQuery(function ($) {
 
   // colorbox アニメーション
   //要素の取得とスピードの設定
-  var box = $(".js-colorbox"),
+  var box = $(".colorbox"),
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
@@ -117,8 +117,6 @@ jQuery(function ($) {
     });
   });
 
-  
-
   // const box = $(".js-colorbox");
   // const speed = 700;
 
@@ -143,5 +141,4 @@ jQuery(function ($) {
   //     }
   //   });
   // });
-  
 });
