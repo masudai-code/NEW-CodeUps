@@ -117,6 +117,7 @@ jQuery(function ($) {
     });
   });
 
+
   // const box = $(".js-colorbox");
   // const speed = 700;
 
@@ -141,4 +142,5 @@ jQuery(function ($) {
   //     }
   //   });
   // });
+  
 });
