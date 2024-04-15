@@ -26,7 +26,7 @@
   z-index: 10;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .mv__title {
@@ -35,7 +35,7 @@
   text-transform: uppercase;
   letter-spacing: 0.54em;
   font-weight: $regular;
-  font-family: $third-font-family;
+  font-family: $fourth-font-family;
   @include mq("md") {
     font-size: rem(80);
   }
@@ -45,6 +45,5 @@
   font-size: rem(20);
   color: $white;
   text-align: center;
-  font-weight: $normal;
+  font-family: $fourth-font-family;
 }
-

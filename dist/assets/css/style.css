@@ -1,6 +1,6 @@
 body {
 	color: #0d2936;
-	font-family: "Gotu", "Noto Sans JP", sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
 	position: relative;
 }
 
@@ -219,7 +219,7 @@ a {
 .about__title {
 	color: #408f95;
 	font-size: 2.5rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1;
 }
 
@@ -228,7 +228,7 @@ a {
 }
 
 .about__text {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -258,16 +258,16 @@ a {
 
 .blog-card__title {
 	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
 }
 
 .blog-card__text {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 1rem;
 }
@@ -389,14 +389,14 @@ a {
 	border: 0.0625rem solid #408f95;
 	color: #408f95;
 	display: inline-block;
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0.5rem 0.75rem;
 }
 
 .campaign-card__title {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -411,7 +411,7 @@ a {
 }
 
 .campaign-card__text {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.714;
 	margin-top: 0.5rem;
@@ -425,7 +425,7 @@ a {
 }
 
 .campaign-card__price-before {
-	font-family: "Lato", serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1;
@@ -443,7 +443,7 @@ a {
 
 .campaign-card__price-after {
 	color: #408f95;
-	font-family: "Lato", serif;
+	font-family: "Noto Serif JP", serif;
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 1;
@@ -648,7 +648,7 @@ a {
 	color: #fff;
 	display: block;
 	font-family: "Noto Sans JP", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1;
 	padding-bottom: 0.75rem;
 	padding-left: 1.375rem;
@@ -818,9 +818,9 @@ a {
 
 .heading__sub {
 	color: #408f95;
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
-	font-weight: 300;
+	font-weight: 400;
 	margin-top: 0.625rem;
 }
 
@@ -851,7 +851,7 @@ a {
 
 .information__title {
 	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 1.2;
@@ -859,9 +859,9 @@ a {
 }
 
 .information__text {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 0.5rem;
 }
@@ -911,17 +911,17 @@ a {
 
 .mv__title {
 	color: #fff;
-	font-family: "Lato", serif;
+	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0.54em;
 	text-transform: uppercase;
 }
 
 .mv__sub-title {
 	color: #fff;
+	font-family: "Lato", sans-serif;
 	font-size: 1.25rem;
-	font-weight: 400;
 	text-align: center;
 }
 
@@ -1082,6 +1082,7 @@ a {
 	display: none;
 	height: 100vh;
 	left: 0;
+	overflow-y: scroll;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1137,8 +1138,13 @@ a {
 	height: 1.125rem;
 	left: 0;
 	position: absolute;
-	top: 0.5rem;
+	top: 0.5625rem;
 	width: 1.125rem;
+}
+
+.sp-nav__left-items + .sp-nav__left-items,
+.sp-nav__right-items + .sp-nav__right-items {
+	margin-top: 1rem;
 }
 
 .voice-card {
@@ -1157,7 +1163,7 @@ a {
 }
 
 .voice-card__age {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1.5;
 }
@@ -1166,14 +1172,14 @@ a {
 	border: 0.0625rem solid #408f95;
 	color: #408f95;
 	display: inline-block;
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0.5rem 0.75rem;
 }
 
 .voice-card__title {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	font-weight: 500;
 	margin-top: 0.25rem;
 }
@@ -1193,7 +1199,7 @@ a {
 }
 
 .voice-card__text {
-	font-family: "Noto Serif JP", sans-serif;
+	font-family: "Gotu", sans-serif;
 	line-height: 1.5;
 	margin-top: 1rem;
 }
