@@ -6,15 +6,11 @@
   }
 }
 
-.contact-texts__items {
-}
-
 .contact-texts__item + .contact-texts__item {
   margin-top: rem(4);
 }
 
 .contact-texts__item p {
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
   text-shadow: rem(0) rem(4) rem(4) rgba($color: $black2, $alpha: 0.25);
   @include mq("md") {

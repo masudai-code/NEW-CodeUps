@@ -21,7 +21,6 @@
   font-size: rem(16);
   font-weight: $medium;
   line-height: 1.5;
-  font-family: $second-font-family;
   border-bottom: rem(1) solid $green1;
 }
 
@@ -30,13 +29,13 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.5;
-  font-family: $second-font-family;
   margin-top: rem(16);
 }
 
 .blog-card__date {
   font-size: rem(12);
   line-height: 1.5;
+  font-family: $second-font-family;
 }
 
 .blog-card__body {

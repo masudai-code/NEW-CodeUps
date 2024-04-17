@@ -4,7 +4,6 @@
   font-size: rem(16);
   font-weight: $bold;
   line-height: 1;
-  font-family: "Noto Sans JP", sans-serif;
   border-bottom: rem(1) solid $green1;
   padding-bottom: rem(5);
   @include mq("md") {
@@ -22,7 +21,6 @@
 .price-list__item dt {
   font-size: rem(14);
   width: 73%;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1;
   @include mq("md") {
     font-size: rem(16);
@@ -32,7 +30,6 @@
 
 .price-list__item dd {
   font-size: rem(14);
-  font-family: "Noto Sans JP", sans-serif;
   text-align: right;
   width: 27%;
   line-height: 1;

@@ -43,7 +43,6 @@
   font-size: rem(20);
   font-weight: $bold;
   line-height: 1.2;
-  font-family: $second-font-family;
   border-bottom: rem(1) solid $green1;
   padding-bottom: rem(4);
   @include mq("md") {
@@ -57,7 +56,6 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.5;
-  font-family: $second-font-family;
   margin-top: rem(8);
 }
 

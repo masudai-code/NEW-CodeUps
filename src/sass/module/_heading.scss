@@ -7,6 +7,7 @@
 .heading__main {
   font-size: rem(32);
   line-height: 1;
+  font-family: $second-font-family;
   @include mq("md") {
     font-size: rem(40);
   }
@@ -33,7 +34,6 @@
   margin-top: rem(10);
   font-size: rem(12);
   color: $green1;
-  font-family: $second-font-family;
   font-weight: $regular;
   @include mq("md") {
   margin-top: rem(8);
