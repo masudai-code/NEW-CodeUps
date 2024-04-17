@@ -77,12 +77,12 @@ jQuery(function ($) {
         // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
         $(".js-page-top").css({
           position: "absolute",
-          bottom: footHeight + 0,
+          bottom: footHeight + 16,
         });
       } else {
         $(".js-page-top").css({
           position: "fixed",
-          bottom: "0",
+          bottom: "1em",
         });
       }
     });
@@ -117,7 +117,7 @@ jQuery(function ($) {
     });
   });
 
-
+  
   // const box = $(".js-colorbox");
   // const speed = 700;
 
@@ -142,5 +142,4 @@ jQuery(function ($) {
   //     }
   //   });
   // });
-  
 });
