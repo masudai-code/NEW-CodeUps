@@ -31,25 +31,25 @@ jQuery(function ($) {
   var campaignSwiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     // ループ
-    speed: 3000,
+    speed: 1000,
     // 少しゆっくり(デフォルトは300)
     slidesPerView: 1.25,
     // 一度に表示する枚数
+    spaceBetween: 24,
+    // スライド間の距離
+    autoplay: {
+      // 自動再生
+      delay: 2000,
+      // 1秒後に次のスライド
+      disableOnInteraction: false // 矢印をクリックしても自動再生を止めない
+    },
+
     breakpoints: {
       1024: {
         slidesPerView: 3.3,
         // 一度に表示する枚数
         spaceBetween: 40 // スライド間の距離
       }
-    },
-
-    spaceBetween: 24,
-    // スライド間の距離
-    autoplay: {
-      // 自動再生
-      delay: 1000,
-      // 1秒後に次のスライド
-      disableOnInteraction: false // 矢印をクリックしても自動再生を止めない
     },
 
     // 前後の矢印
